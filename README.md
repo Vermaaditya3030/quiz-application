@@ -6,7 +6,7 @@ HTML/CSS/JavaScript project series.
 - Web Development, JavaScript and General Technology categories
 - Easy, Medium and Hard difficulty
 - 5, 8 or 10 questions
-- 30-second countdown per question
+- 15-second countdown per question
 - Instant correct/wrong feedback
 - Progress bar and final score
 - Best score saved in LocalStorage
