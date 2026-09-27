@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="QuizMaster responsive JavaScript quiz application">
+<title>QuizMaster — Quiz Application</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">Quiz<span>Master</span></a><button id="themeBtn" class="icon-btn">🌙</button></div></header>
+<main class="wrap">
+<section id="startScreen" class="screen">
+<div class="hero"><p class="eyebrow">JAVASCRIPT PROJECT</p><h1>Test your knowledge.<br><span>Beat your score.</span></h1><p class="muted">A professional quiz app with categories, difficulty levels, timed questions and instant results.</p></div>
+<div class="card setup"><h2>Quiz Setup</h2><div class="form-grid">
+<div><label>Category</label><select id="category"><option value="web">Web Development</option><option value="javascript">JavaScript</option><option value="general">General Technology</option></select></div>
+<div><label>Difficulty</label><select id="difficulty"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option></select></div>
+<div><label>Questions</label><select id="questionCount"><option value="5">5 Questions</option><option value="8" selected>8 Questions</option><option value="10">10 Questions</option></select></div>
+</div><button id="startBtn" class="primary">Start Quiz →</button></div>
+<div class="feature-grid"><div class="feature"><strong>⏱ Timer</strong><span>15 seconds per question</span></div><div class="feature"><strong>🎯 Score</strong><span>Instant answer feedback</span></div><div class="feature"><strong>💾 Best Score</strong><span>Saved in LocalStorage</span></div></div>
+</section>
+<section id="quizScreen" class="screen hidden">
+<div class="quiz-top"><div><p class="eyebrow" id="quizMeta">QUIZ</p><h2 id="questionNumber">Question 1</h2></div><div class="timer" id="timer">00:15</div></div>
+<div class="progress"><div id="progressBar"></div></div>
+<div class="card question-card"><p class="question" id="questionText"></p><div id="answers" class="answers"></div><div class="quiz-actions"><span class="muted" id="answeredText">Choose an answer</span><button id="nextBtn" class="primary" disabled>Next →</button></div></div>
+</section>
+<section id="resultScreen" class="screen hidden">
+<div class="result card"><p class="eyebrow">QUIZ COMPLETE</p><div class="score-ring"><strong id="score">0%</strong><span>Score</span></div>
+<h1 id="resultTitle">Great work!</h1><p class="muted" id="resultMessage"></p>
+<div class="result-stats"><div><small>Correct</small><strong id="correctCount">0</strong></div><div><small>Wrong</small><strong id="wrongCount">0</strong></div><div><small>Best Score</small><strong id="bestScore">0%</strong></div></div>
+<div class="result-actions"><button id="restartBtn" class="primary">Play Again</button><button id="homeBtn" class="outline-btn">Back to Setup</button></div></div>
+</section>
+</main><footer>QuizMaster • Built with HTML, CSS & JavaScript</footer>
+<script src="js/script.js"></script>
+</body></html>

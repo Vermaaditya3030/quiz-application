@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#697386;--border:#e4e8f0;--primary:#5b5ce2;--primary2:#4748c7;--green:#15966d;--red:#dc4b5d;--shadow:0 14px 40px rgba(31,42,70,.08)}
+body.dark{--bg:#10131c;--card:#181d29;--text:#f1f4fa;--muted:#9ca7b8;--border:#2b3343;--shadow:0 14px 40px rgba(0,0,0,.3)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;transition:.2s}
+.wrap{width:min(1000px,92%);margin:auto}header{height:70px;background:var(--card);border-bottom:1px solid var(--border)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{color:var(--text);text-decoration:none;font-size:1.4rem;font-weight:850}.brand span{color:var(--primary)}
+button,select{font:inherit}.icon-btn,.outline-btn{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:10px;cursor:pointer}.icon-btn{padding:9px 12px}.outline-btn{padding:11px 16px;font-weight:750}
+.primary{border:0;background:var(--primary);color:#fff;padding:12px 20px;border-radius:10px;font-weight:800;cursor:pointer}.primary:hover{background:var(--primary2)}button:disabled{opacity:.45;cursor:not-allowed}
+.screen{padding:55px 0}.hidden{display:none}.hero{text-align:center;max-width:760px;margin:0 auto 35px}.eyebrow{color:var(--primary);font-size:.75rem;font-weight:850;letter-spacing:.12em}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.04;margin:10px 0}.hero h1 span{color:var(--primary)}.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}.setup{padding:28px;max-width:760px;margin:auto}.setup h2{margin-top:0}
+.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}label{display:block;font-size:.82rem;font-weight:750;margin-bottom:7px}
+select{width:100%;border:1px solid var(--border);background:var(--card);color:var(--text);padding:11px;border-radius:9px;outline:0}.setup>.primary{width:100%}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.feature{padding:18px;border:1px solid var(--border);border-radius:13px;background:var(--card)}.feature strong,.feature span{display:block}.feature span{color:var(--muted);font-size:.83rem;margin-top:3px}
+.quiz-top{display:flex;align-items:center;justify-content:space-between}.quiz-top h2{margin:5px 0}.timer{font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 16px;font-weight:850;min-width:90px;text-align:center}.timer.warning{color:var(--red)}
+.progress{height:8px;background:var(--border);border-radius:99px;overflow:hidden;margin:18px 0}.progress div{height:100%;width:0;background:var(--primary);transition:width .25s}.question-card{padding:28px}.question{font-size:1.35rem;font-weight:800;margin:0 0 22px}
+.answers{display:grid;gap:11px}.answer{border:1px solid var(--border);background:var(--card);color:var(--text);padding:15px;text-align:left;border-radius:11px;cursor:pointer;font-weight:650}.answer:hover{border-color:var(--primary)}.answer.selected{border-color:var(--primary);background:rgba(91,92,226,.1)}.answer.correct{border-color:var(--green);background:rgba(21,150,109,.1)}.answer.wrong{border-color:var(--red);background:rgba(220,75,93,.1)}
+.quiz-actions{display:flex;align-items:center;justify-content:space-between;margin-top:24px}.result{text-align:center;padding:42px 28px;max-width:650px;margin:auto}
+.score-ring{width:150px;height:150px;border:10px solid var(--primary);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:18px auto}.score-ring strong{font-size:2rem}.score-ring span{font-size:.8rem;color:var(--muted)}
+.result h1{margin:5px 0}.result-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.result-stats div{border:1px solid var(--border);border-radius:12px;padding:15px}.result-stats small,.result-stats strong{display:block}.result-stats small{color:var(--muted)}.result-stats strong{font-size:1.4rem}.result-actions{display:flex;justify-content:center;gap:10px}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:.8rem}
+@media(max-width:700px){.form-grid,.feature-grid{grid-template-columns:1fr}.screen{padding:35px 0}.question-card{padding:20px}.quiz-actions,.result-actions{flex-direction:column;align-items:stretch}.result-actions button{width:100%}}
